@@ -34,7 +34,7 @@ export default function Home() {
     <button type="button" className="btn btn-lg btn-outline-primary m-2">Institution
 </button>
     </Link>
-    <Link href="/admin-login" replace>
+    <Link href="#" replace>
     <button type="button" className="btn btn-lg btn-outline-primary m-2">Company
 </button>
 </Link>

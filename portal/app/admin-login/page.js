@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import css from '../style.css'
+import Link from 'next/link'
 import 'bootstrap/dist/css/bootstrap.css'
 import { Button,
   Form,
