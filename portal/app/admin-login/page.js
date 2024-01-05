@@ -36,7 +36,9 @@ export default function adminlogin() {
               placeholder="Enter Password"
             />
           </FormGroup>
-        <Button>Login</Button>
+          <Link href="/student-login" replace>
+                        <button type="button" className="btn btn-lg btn-outline-primary m-2">Login</button>
+                      </Link>
       </Form>
     </div>	
 </div>
