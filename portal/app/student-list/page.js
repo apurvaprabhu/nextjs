@@ -1,47 +1,67 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import 'bootstrap/dist/css/bootstrap.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function StudentList() {
+  const tableHeadStyle = {
+    th: {
+      color: '#FFF',
+      fontWeight: 700,
+      background: 'linear-gradient(-45deg, #00bcd9 0%, #608590 100%)',
+      whiteSpace: 'nowrap',
+    },
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-        <div id="page-wrapper">
-          <div id="page-inner">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <h2>Student Details</h2>
-              </div>
-            </div>
-            <hr />
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-md-8">
-                  <table className="table table-bordered table-hover"> {/* Added table-bordered class */}
-                    <thead>
-                      <tr>
-                        <th className="col-xl-4">Student Name</th>
-                        <th className="col-xl-4">Email</th>
-                        <th className="col-xl-4">Contact Number</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Test</td>
-                        <td>test@yahoo.com</td>
-                        <td>76554432234</td>
-                      </tr>
-                      <tr>
-                        <td>TEST</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="container">
+        <h1 className='text-primary text-center m-3 p-3  '>Student Details</h1>
+        <div className="table-responsive">
+          <table className="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style={tableHeadStyle.th}>Sr. No</th>
+                <th style={tableHeadStyle.th}>
+                  <i className="fa fa-user" aria-hidden="true"></i> Student Name
+                </th>
+                <th style={tableHeadStyle.th}>
+                  <i className="fa fa-map-marker" aria-hidden="true"></i> Email
+                </th>
+                <th style={tableHeadStyle.th}>
+                  <i className="fa fa-phone" aria-hidden="true"></i> Mobile Number
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Tom</td>
+                <td>test@yahoo.com</td>
+                <td>54535288</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Virat Bisht</td>
+                <td>test@yahoo.com</td>
+                <td>4554449688</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Jack</td>
+                <td>test@yahoo.com</td>
+                <td>443439197</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Garry</td>
+                <td>test@yahoo.com</td>
+                <td>64440987</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </main>
